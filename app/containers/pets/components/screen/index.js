@@ -4,6 +4,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import List from '../list';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,30 +13,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
+  title: {
+    marginTop: 50,
+  },
+  list: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
 const Screen = () => (
   <View style={styles.container}>
-    <Text style={styles.welcome}>
-      Welcome to React Native!
-        </Text>
-    <Text style={styles.instructions}>
-      To get started, edit index.ios.js
-        </Text>
-    <Text style={styles.instructions}>
-      Press Cmd+R to reload,{'\n'}
-      Cmd+D or shake for dev menu
-        </Text>
+    <Text style={styles.title}>Your Pets</Text>
+    <List style={styles.list} />
   </View>
 );
 

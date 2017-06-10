@@ -1,11 +1,4 @@
-import {
-  AppRegistry,
-} from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import Home from './app/containers/home';
-
-const App = StackNavigator({
-  Home: { screen: Home },
-});
+import { AppRegistry } from 'react-native';
+import App from './app/index';
 
 AppRegistry.registerComponent('petwhisperer', () => App);

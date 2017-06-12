@@ -19,4 +19,7 @@ export default StyleSheet.create({
     fontWeight: '600',
     fontSize: 18,
   },
+  info: {
+    justifyContent: 'center',
+  },
 });

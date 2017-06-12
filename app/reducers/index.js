@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 import pets from './pets';
 import nav from './nav';
-import petActivities from '../containers/petActivities/reducers/petActivities';
-import petNav from '../containers/pet/reducers/nav';
+import petActivities from './petActivities';
 
 export default combineReducers({
   pets,
   nav,
   petActivities,
-  petNav,
 });

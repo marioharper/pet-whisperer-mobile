@@ -10,9 +10,9 @@ const Item = ({ pet, petScreen }) => (
         style={CSS.image}
         source={{ uri: pet.image_url }}
       />
-      <View>
-        <Text style={CSS.name}>{pet.name}</Text>
+      <View style={CSS.info}>
         <Text>{pet.type}</Text>
+        <Text style={CSS.name}>{pet.name}</Text>
       </View>
     </View>
   </TouchableHighlight>

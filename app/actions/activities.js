@@ -1,4 +1,4 @@
-import activitiesApi from '../../../api/activities';
+import activitiesApi from '../api/activities';
 import * as actionTypes from '../constants/actions';
 
 export function getPetActivities(petId) {

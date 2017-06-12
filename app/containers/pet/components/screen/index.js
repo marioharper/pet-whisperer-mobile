@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
-import PetWithNavigationState from '../../PetNavigator';
+import Banner from '../banner';
+import PetActivities from '../../../petActivities';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
 
 const Screen = ({ navigation }) => (
   <View style={styles.container}>
-    <PetWithNavigationState pet={navigation.state.params.pet} />
+    <Banner pet={navigation.state.params.pet} />
+    <PetActivities pet={navigation.state.params.pet} />
   </View>
 );
 

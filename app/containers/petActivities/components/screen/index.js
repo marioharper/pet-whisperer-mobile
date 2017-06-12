@@ -4,17 +4,14 @@ import {
   Text,
   View,
 } from 'react-native';
-import Banner from '../banner';
 import List from '../list';
 import CSS from './styles';
 
-const Screen = ({ screenProps, getPetActivities }) => {
-  const { pet } = screenProps;
+const Screen = ({ pet, getPetActivities }) => {
   getPetActivities(pet.id);
 
   return (
     <View style={CSS.container}>
-      <Banner pet={pet} />
       <List />
     </View>
   );

@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import Screen from './components/screen';
-import { getPetActivities } from '../../actions/activities';
+import { createPetActivity } from '../../actions/activities';
 
 const mapDispatchToProps = dispatch => ({
-  getPetActivities: petId => dispatch(getPetActivities(petId)),
+  createPetActivity: (petId, activity) => dispatch(createPetActivity(petId, activity)),
 });
 
 export default connect(null, mapDispatchToProps)(Screen);

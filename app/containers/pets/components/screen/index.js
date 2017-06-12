@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
+  Button,
   View,
 } from 'react-native';
 import List from '../list';
@@ -20,6 +20,7 @@ const Screen = () => (
 
 Screen.navigationOptions = {
   title: 'Your Pets',
+  headerRight: <Button title="Add" />,
 };
 
 export default Screen;

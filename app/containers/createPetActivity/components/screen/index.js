@@ -2,23 +2,24 @@ import React from 'react';
 import {
   Text,
   View,
+  DatePickerIOS,
 } from 'react-native';
 import CSS from './styles';
 
-const Screen = ({ screenProps }) => {
-  const { pet } = screenProps;
+const Screen = ({ navigation }) => {
+  const { pet } = navigation.state.params;
 
   return (
     <View style={CSS.container}>
-      <Text>{pet.type}</Text>
-      <Text>{pet.name}</Text>
-      <Text>Birthday: {pet.birthday}</Text>
+      <DatePickerIOS date={new Date()} />
+      <Text>Time</Text>
+      <Text>Note</Text>
     </View>
   );
 };
 
 Screen.navigationOptions = () => ({
-  title: 'Info',
+  title: 'Add Activity',
 });
 
 export default Screen;

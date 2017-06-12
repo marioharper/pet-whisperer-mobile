@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { View, ListView } from 'react-native';
+import { ListView } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import Item from '../item';
 import CSS from './styles';

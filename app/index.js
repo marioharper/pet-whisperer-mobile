@@ -1,11 +1,10 @@
 import React from 'react';
-import { StackNavigator } from 'react-navigation';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import Pets from './containers/pets';
 import reducer from './reducers';
 import { getPets } from './actions/pets';
+import AppWithNavigationState from './AppNavigator';
 
 const store = createStore(
   reducer,
@@ -13,15 +12,11 @@ const store = createStore(
 );
 
 const App = () => {
-  const Navigator = StackNavigator({
-    Home: { screen: Pets },
-  });
-
   store.dispatch(getPets());
 
   return (
     <Provider store={store} >
-      <Navigator />
+      <AppWithNavigationState />
     </Provider>
   );
 };

@@ -239,7 +239,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9RtfgL1JMIazTRpsd0CfYc9NhmA=
+		2hG8l3xGT3tCclKKchEC6Hxqd00=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -267,7 +267,7 @@
 		</data>
 		<key>PlugIns/petwhispererTests.xctest.dSYM/Contents/Resources/DWARF/petwhispererTests</key>
 		<data>
-		ZZ+JMuso2V+4QU+/w5gtX/VoMfQ=
+		pnZCm0DHrnjkqxJGtBM5ts0Qlj0=
 		</data>
 		<key>PlugIns/petwhispererTests.xctest/Info.plist</key>
 		<data>
@@ -279,47 +279,7 @@
 		</data>
 		<key>PlugIns/petwhispererTests.xctest/petwhispererTests</key>
 		<data>
-		+nbGmhR0ej1HuNbbZ9Kd54TdKO4=
-		</data>
-		<key>Rubik-Black.ttf</key>
-		<data>
-		kl5KjaOKl3N/AT1FwUQTVVPX6O8=
-		</data>
-		<key>Rubik-BlackItalic.ttf</key>
-		<data>
-		P3e509gVVRHZTXKkEMgLPRgAHN4=
-		</data>
-		<key>Rubik-Bold.ttf</key>
-		<data>
-		9WMM40QdlLqjoIEmg9VNehmR718=
-		</data>
-		<key>Rubik-BoldItalic.ttf</key>
-		<data>
-		ZHj9TI7S5Z6Al8tgi2p+km4+wpg=
-		</data>
-		<key>Rubik-Italic.ttf</key>
-		<data>
-		34892y6GZZRD4eiQuEuZR85IGiU=
-		</data>
-		<key>Rubik-Light.ttf</key>
-		<data>
-		YwaDZbiicZsakmhJm9SJwaaFxs4=
-		</data>
-		<key>Rubik-LightItalic.ttf</key>
-		<data>
-		W4LlgfjL1GFqbhMH/7ZXVLhB1Lw=
-		</data>
-		<key>Rubik-Medium.ttf</key>
-		<data>
-		XaX5bFcGDlSpIuoN8StMKXl1k7k=
-		</data>
-		<key>Rubik-MediumItalic.ttf</key>
-		<data>
-		DEeZKotuIK0ea7ZWSe1hI1HHd0o=
-		</data>
-		<key>Rubik-Regular.ttf</key>
-		<data>
-		8HEc3DUEalTRuIf6+9Et4KW4JUk=
+		c7jxgKKsdtWkcuSihm7Pq0ATu6k=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -328,10 +288,6 @@
 		<key>Zocial.ttf</key>
 		<data>
 		C9pZx7zT05J94EfgkYdaRCi/0as=
-		</data>
-		<key>rubicon-icon-font.ttf</key>
-		<data>
-		F2VxjHIuRc4XzRljt0mn+fwxp/A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1024,11 +980,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZ+JMuso2V+4QU+/w5gtX/VoMfQ=
+			pnZCm0DHrnjkqxJGtBM5ts0Qlj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			o6sGtbERyadencUTGL2/iJNeI7zW4uFceFR+DvdmDWY=
+			9LDpNINE7EGXG5P7gVXc9ExAEsBJJCrM1EM5gQEvsbg=
 			</data>
 		</dict>
 		<key>PlugIns/petwhispererTests.xctest/Info.plist</key>
@@ -1057,121 +1013,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+nbGmhR0ej1HuNbbZ9Kd54TdKO4=
+			c7jxgKKsdtWkcuSihm7Pq0ATu6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			szg9HzMznih+/y946QyzAi1MyLSj3KWeCJKAkk9xnts=
-			</data>
-		</dict>
-		<key>Rubik-Black.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kl5KjaOKl3N/AT1FwUQTVVPX6O8=
-			</data>
-			<key>hash2</key>
-			<data>
-			ESAKwHV7gLDBeAwk+rFZXd1mbU0mLQe1H2E3mOl7AO0=
-			</data>
-		</dict>
-		<key>Rubik-BlackItalic.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P3e509gVVRHZTXKkEMgLPRgAHN4=
-			</data>
-			<key>hash2</key>
-			<data>
-			zg5t4IhJdDeCTlccegw4l08gWgu7iyCuWzCeQZZi8GM=
-			</data>
-		</dict>
-		<key>Rubik-Bold.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9WMM40QdlLqjoIEmg9VNehmR718=
-			</data>
-			<key>hash2</key>
-			<data>
-			W99y/pi9sAj3MpbGykGaDdMh26+gpvlN692TKRhwXQE=
-			</data>
-		</dict>
-		<key>Rubik-BoldItalic.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZHj9TI7S5Z6Al8tgi2p+km4+wpg=
-			</data>
-			<key>hash2</key>
-			<data>
-			vLba9Azpfyv1KnhcFE937fLZQ0hmKlv3uIKwPlwBPY4=
-			</data>
-		</dict>
-		<key>Rubik-Italic.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			34892y6GZZRD4eiQuEuZR85IGiU=
-			</data>
-			<key>hash2</key>
-			<data>
-			jDwrxEV1j+UrMzTQSFoz3HgRhK8UcF+DxkvjJWXU/9U=
-			</data>
-		</dict>
-		<key>Rubik-Light.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YwaDZbiicZsakmhJm9SJwaaFxs4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Vq5amG8BwC3PdW6k5+iJTc8jnJuy0h5mgBTRcr6gSY8=
-			</data>
-		</dict>
-		<key>Rubik-LightItalic.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W4LlgfjL1GFqbhMH/7ZXVLhB1Lw=
-			</data>
-			<key>hash2</key>
-			<data>
-			HLQ1IHyoJ5fJqAHDYSDi4wJ6oi/c5GdTDdEX30PzA28=
-			</data>
-		</dict>
-		<key>Rubik-Medium.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XaX5bFcGDlSpIuoN8StMKXl1k7k=
-			</data>
-			<key>hash2</key>
-			<data>
-			gqjIGKq3yjFXxJeVsvxHoIofpJDdWqest6B5YVw92lE=
-			</data>
-		</dict>
-		<key>Rubik-MediumItalic.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DEeZKotuIK0ea7ZWSe1hI1HHd0o=
-			</data>
-			<key>hash2</key>
-			<data>
-			/CJ64ndVyYV7dIPlP0UsP30rDL5Ry5LJxO2qZPPZvgA=
-			</data>
-		</dict>
-		<key>Rubik-Regular.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8HEc3DUEalTRuIf6+9Et4KW4JUk=
-			</data>
-			<key>hash2</key>
-			<data>
-			wXc366f6P0hU9M1QIm51qelUtPxGDYBbIuXDGgSwJh0=
+			w8T00j8LhIx9Erp5ujHiUszSLXy61AtfSp0Y3gdeadA=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
@@ -1194,17 +1040,6 @@
 			<key>hash2</key>
 			<data>
 			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=
-			</data>
-		</dict>
-		<key>rubicon-icon-font.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F2VxjHIuRc4XzRljt0mn+fwxp/A=
-			</data>
-			<key>hash2</key>
-			<data>
-			nwGagy6BHVeeopu+dbmM6/Wg6oCZtdNt6z1xrFV4MVM=
 			</data>
 		</dict>
 	</dict>

@@ -1,19 +1,14 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  DatePickerIOS,
-} from 'react-native';
+import { View } from 'react-native';
 import CSS from './styles';
+import Form from '../form';
 
 const Screen = ({ navigation }) => {
   const { pet } = navigation.state.params;
 
   return (
     <View style={CSS.container}>
-      <DatePickerIOS date={new Date()} />
-      <Text>Time</Text>
-      <Text>Note</Text>
+      <Form pet={pet} onSubmit={data => console.log('form submitted', data)} />
     </View>
   );
 };

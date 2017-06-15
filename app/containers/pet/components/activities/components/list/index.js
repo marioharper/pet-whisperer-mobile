@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { ListView } from 'react-native';
 import Item from '../item';
@@ -41,8 +40,4 @@ List.propTypes = {
   activities: PropTypes.array.isRequired,
 };
 
-const mapStateToProps = state => ({
-  activities: state.petActivities,
-});
-
-export default connect(mapStateToProps)(List);
+export default List;

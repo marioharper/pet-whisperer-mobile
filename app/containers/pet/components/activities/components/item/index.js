@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { View, Text, TouchableHighlight } from 'react-native';
+import { View, Text } from 'react-native';
 import CSS from './styles';
 
 const Item = ({ activity }) => {

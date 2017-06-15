@@ -31,7 +31,8 @@ class Form extends Component {
 
   handleSubmit() {
     this.props.onSubmit({
-      when: this.state.when,
+      type: 'feed',
+      at: new Date(this.state.when).getTime() / 1000,
       note: this.state.note,
     });
   }

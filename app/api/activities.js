@@ -70,6 +70,16 @@ const getPetActivities = animalId => Promise.resolve([
   },
 ]);
 
+const createPetActivity = (animalId, { type, at, note }) => Promise.resolve({
+  type,
+  animal_id: animalId,
+  created_at: new Date().getTime(),
+  by: 'google-oauth2|106800659518663816000',
+  at,
+  note,
+});
+
 export default {
   getPetActivities,
+  createPetActivity,
 };

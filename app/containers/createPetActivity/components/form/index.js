@@ -31,7 +31,7 @@ class Form extends Component {
 
   handleSubmit() {
     this.props.onSubmit({
-      type: 'feed',
+      type: this.props.type,
       at: new Date(this.state.when).getTime() / 1000,
       note: this.state.note,
     });
@@ -80,6 +80,7 @@ Form.navigationOptions = () => ({
 
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default Form;

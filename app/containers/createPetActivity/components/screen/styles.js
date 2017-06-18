@@ -5,10 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     padding: 20,
   },
-  noteInput: {
-    margin: 20,
-    height: 120,
-    borderColor: 'gray',
-    borderWidth: 1,
+  help: {
+    marginBottom: 20,
   },
 });

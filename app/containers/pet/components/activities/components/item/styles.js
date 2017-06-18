@@ -9,18 +9,16 @@ export default StyleSheet.create({
     borderStyle: 'solid',
     borderBottomWidth: 1,
   },
-  image: {
-    width: 75,
-    height: 75,
-    marginRight: 20,
-    borderRadius: 3,
+  icon: {
+    paddingRight: 10,
   },
-  name: {
-    fontWeight: '200',
-    fontSize: 18,
+  message: {
+    fontWeight: '300',
+    fontSize: 16,
   },
   time: {
     textAlign: 'right',
     flex: 1,
+    fontWeight: '200',
   },
 });

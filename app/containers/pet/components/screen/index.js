@@ -42,10 +42,6 @@ class Screen extends Component {
   }
 }
 
-Screen.navigationOptions = ({ navigation }) => ({
-  title: navigation.state.params.pet.name,
-  headerRight: <Button title="Edit" />,
-});
 
 Screen.propTypes = {
   pet: PropTypes.shape({

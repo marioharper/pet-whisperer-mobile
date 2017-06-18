@@ -11,10 +11,6 @@ const Nav = ({ navigation }) => (
     </TouchableOpacity>
 
     <Text style={CSS.header}>Pet Whisperer</Text>
-
-    <TouchableOpacity onPress={() => {}} >
-      <Text style={CSS.logoutBtn}>Logout</Text>
-    </TouchableOpacity>
   </View>
 );
 

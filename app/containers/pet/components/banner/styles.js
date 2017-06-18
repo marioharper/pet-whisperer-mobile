@@ -18,4 +18,7 @@ export default StyleSheet.create({
   label: {
     fontWeight: 'bold',
   },
+  name: {
+    marginBottom: 20,
+  },
 });

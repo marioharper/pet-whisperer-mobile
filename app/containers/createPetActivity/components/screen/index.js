@@ -15,10 +15,6 @@ const Screen = ({ navigation, createPetActivity }) => {
   );
 };
 
-Screen.navigationOptions = (/* { navigation }*/) => ({
-  title: 'Add Activity',
-});
-
 Screen.propTypes = {
   navigation: PropTypes.shape({
     state: PropTypes.shape({

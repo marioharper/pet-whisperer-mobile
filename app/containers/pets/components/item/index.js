@@ -11,7 +11,6 @@ const Item = ({ pet, petScreen }) => (
         source={{ uri: pet.image_url }}
       />
       <View style={CSS.info}>
-        <Text>{pet.type}</Text>
         <Text style={CSS.name}>{pet.name}</Text>
       </View>
     </View>

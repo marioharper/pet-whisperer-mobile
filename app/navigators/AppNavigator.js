@@ -1,39 +1,49 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import PropTypes from 'prop-types';
-import { addNavigationHelpers, DrawerNavigator } from 'react-navigation';
+import { addNavigationHelpers, TabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Nav from '../components/nav';
 import { PetsNavigator } from '../navigators/PetsNavigator';
 
-export const AppNavigator = DrawerNavigator({
+export const AppNavigator = TabNavigator({
   Home: {
     screen: PetsNavigator,
     navigationOptions: {
       title: 'Pets',
-      drawerIcon: <Icon name="pets" size={20} />,
+      tabBarIcon: ({ tintColor }) => <Icon name="pets" color={tintColor} size={30} />,
     },
   },
   Friends: {
-    screen: PetsNavigator,
+    screen: () => (<Text>Friends</Text>),
     navigationOptions: {
       title: 'Friends',
-      drawerIcon: <Icon name="people" size={20} />,
+      tabBarIcon: ({ tintColor }) => <Icon name="people" color={tintColor} size={30} />,
     },
+  },
+  Settings: {
+    screen: () => (<Text>Settings</Text>),
+    navigationOptions: {
+      title: 'Settings',
+      tabBarIcon: ({ tintColor }) => <Icon name="settings" color={tintColor} size={30} />,
+    },
+  },
+}, {
+  tabBarOptions: {
+    showLabel: false,
+    style: {
+      backgroundColor: 'white',
+      borderTopColor: 'white',
+    },
+    activeTintColor: '#64C962',
+    inactiveTintColor: '#D0E2ED',
   },
 });
 
-const AppWithNavigationState = ({ dispatch, nav }) => {
-  const navigation = addNavigationHelpers({ dispatch, state: nav });
-
-  return (
-    <View style={{ flex: 1 }}>
-      <Nav navigation={navigation} />
-      <AppNavigator navigation={navigation} />
-    </View>
-  );
-};
+const AppWithNavigationState = ({ dispatch, nav }) => (
+  <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
+);
 
 AppWithNavigationState.propTypes = {
   dispatch: PropTypes.func.isRequired,

@@ -8,12 +8,34 @@ import EditPet from '../containers/editPet';
 import CreatePetActivity from '../containers/createPetActivity';
 
 export const PetsNavigator = StackNavigator({
-  Pets: { screen: Pets },
+  Pets: {
+    screen: Pets,
+    navigationOptions: {
+      title: 'Pets',
+    },
+  },
   Pet: { screen: Pet },
   EditPet: { screen: EditPet },
-  CreatePetActivity: { screen: CreatePetActivity },
+  CreatePetActivity: {
+    screen: CreatePetActivity,
+    navigationOptions: {
+      title: 'Add Activity',
+    },
+  },
 }, {
+  cardStyle: {
+    backgroundColor: '#FCFEFF',
+  },
   navigationOptions: {
+    headerStyle: {
+      backgroundColor: 'white',
+      borderBottomColor: 'white',
+    },
+    headerTitleStyle: {
+      color: '#4A5468',
+    },
+    headerBackTitle: null,
+    headerTintColor: 'white',
   },
 });
 

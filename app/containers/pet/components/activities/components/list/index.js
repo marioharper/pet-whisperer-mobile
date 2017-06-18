@@ -40,4 +40,8 @@ List.propTypes = {
   activities: PropTypes.array.isRequired,
 };
 
+List.defaultProps = {
+  activities: [],
+};
+
 export default List;

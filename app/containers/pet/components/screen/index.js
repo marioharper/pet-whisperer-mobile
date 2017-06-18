@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  View,
-  Button,
-} from 'react-native';
+import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Banner from '../banner';
 import Activities from '../activities';
@@ -18,12 +15,12 @@ class Screen extends Component {
 
   render() {
     const { pet, createPetActivityScreen } = this.props;
-
+    console.log('activities', pet.activities);
     return (
       <View style={CSS.container}>
         <Banner style={CSS.banner} pet={pet} />
-        <Activities activities={pet.activities || []} />
-        <View style={CSS.actionButtons}>
+        <Activities activities={pet.activities} />
+        {/* <View style={CSS.actionButtons}>
           <Icon
             style={CSS.actionButton}
             name="food-fork-drink"
@@ -36,7 +33,7 @@ class Screen extends Component {
             size={50}
             onPress={() => createPetActivityScreen(pet, 'medicate')}
           />
-        </View>
+        </View>*/}
       </View>
     );
   }

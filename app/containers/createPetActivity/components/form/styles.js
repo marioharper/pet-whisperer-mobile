@@ -8,7 +8,7 @@ export default StyleSheet.create({
     fontSize: 20,
   },
   noteInput: {
-    height: 180,
+    height: 160,
     fontSize: 18,
     margin: 10,
     padding: 10,

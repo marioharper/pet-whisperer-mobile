@@ -14,6 +14,7 @@ const Banner = ({ pet }) => (
       source={{ uri: pet.image_url }}
     />
     <View style={CSS.info}>
+      <Text style={CSS.name}>{pet.name}</Text>
       <Text style={CSS.label}>Birthday</Text>
       <Text>{moment(pet.birthday * 1000).format('MMMM Do YYYY')}</Text>
     </View>

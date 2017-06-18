@@ -24,18 +24,19 @@ export const PetsNavigator = StackNavigator({
   },
 }, {
   cardStyle: {
-    backgroundColor: '#FCFEFF',
+    backgroundColor: '#F4F9FE',
   },
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',
       borderBottomColor: 'white',
+      shadowOpacity: 0,
     },
     headerTitleStyle: {
       color: '#4A5468',
     },
     headerBackTitle: null,
-    headerTintColor: 'white',
+    headerTintColor: '#4A5468',
   },
 });
 

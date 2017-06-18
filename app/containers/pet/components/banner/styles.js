@@ -16,9 +16,11 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   label: {
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   name: {
-    marginBottom: 20,
+    marginBottom: 10,
+    fontSize: 20,
+    textAlign: 'center',
   },
 });

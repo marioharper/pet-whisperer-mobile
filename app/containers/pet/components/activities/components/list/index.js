@@ -19,6 +19,7 @@ class List extends Component {
 
   componentWillReceiveProps(newProps, oldProps) {
     if (newProps.activities !== oldProps.activities) {
+      console.log('got activities', newProps.activities);
       this.setState({
         activities: this.state.activities.cloneWithRows(newProps.activities),
       });

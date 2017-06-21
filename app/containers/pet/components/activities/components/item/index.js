@@ -7,7 +7,7 @@ import CSS from './styles';
 
 const Item = ({ activity }) => {
   let message;
-
+  console.log('activity', activity);
   switch (activity.type) {
     case 'medicate':
       message = 'Took their medication';

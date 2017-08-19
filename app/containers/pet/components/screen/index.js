@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Banner from '../banner';
 import Activities from '../activities';
 import CSS from './styles';
@@ -15,7 +15,7 @@ class Screen extends Component {
 
   render() {
     const { pet, createPetActivityScreen } = this.props;
-    console.log('activities', pet.activities);
+
     return (
       <View style={CSS.container}>
         <Banner style={CSS.banner} pet={pet} />

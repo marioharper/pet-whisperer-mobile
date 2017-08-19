@@ -43,10 +43,10 @@ export const AppNavigator = TabNavigator({
   tabBarOptions: {
     showLabel: false,
     style: {
-      marginTop: 5,
+      paddingTop: 5,
       marginBottom: 5,
       backgroundColor: 'white',
-      borderTopColor: 'white',
+      borderTopColor: '#F5F8FA',
     },
     activeTintColor: '#64C962',
     inactiveTintColor: '#D0E2ED',

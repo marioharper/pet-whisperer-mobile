@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ListView } from 'react-native';
+import { Text, View, ListView } from 'react-native';
 import Item from '../item';
 import CSS from './styles';
 
@@ -10,6 +10,7 @@ class List extends Component {
 
     const ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2,
+      sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
     });
 
     this.state = {
@@ -19,7 +20,6 @@ class List extends Component {
 
   componentWillReceiveProps(newProps, oldProps) {
     if (newProps.activities !== oldProps.activities) {
-      console.log('got activities', newProps.activities);
       this.setState({
         activities: this.state.activities.cloneWithRows(newProps.activities),
       });
@@ -32,6 +32,7 @@ class List extends Component {
         style={CSS.container}
         dataSource={this.state.activities}
         renderRow={activity => <Item activity={activity} />}
+        removeClippedSubviews={false}
       />
     );
   }

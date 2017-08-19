@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Image, Text, TouchableHighlight } from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import CSS from './styles';
 
 const Item = ({ pet, petScreen }) => (
-  <TouchableHighlight onPress={() => petScreen(pet)}>
+  <TouchableOpacity onPress={() => petScreen(pet)}>
     <View style={CSS.container}>
       <Image
         style={CSS.image}
@@ -14,7 +14,7 @@ const Item = ({ pet, petScreen }) => (
         <Text style={CSS.name}>{pet.name}</Text>
       </View>
     </View>
-  </TouchableHighlight>
+  </TouchableOpacity>
 );
 
 Item.propTypes = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Button } from 'react-native';
+import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { addNavigationHelpers, TabNavigator } from 'react-navigation';
 import { connect } from 'react-redux';

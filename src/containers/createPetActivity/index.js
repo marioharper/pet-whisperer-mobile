@@ -5,7 +5,7 @@ import { createPetActivity } from '../../actions/activities';
 
 const mapDispatchToProps = dispatch => ({
   createPetActivity: (petId, activity) => dispatch(createPetActivity(petId, activity))
-      .then(() => dispatch(NavigationActions.back())),
+    .then(() => dispatch(NavigationActions.back())),
 });
 
 export default connect(null, mapDispatchToProps)(Screen);

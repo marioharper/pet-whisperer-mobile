@@ -24,15 +24,16 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expo/vector-icons": "^5.1.0",
-    "expo": "^19.0.0",
-    "moment": "^2.18.1",
-    "prop-types": "^15.5.10",
+    "@expo/vector-icons": "5.x.x",
+    "expo": "21.x.x",
+    "jwt-decode": "2.x.x",
+    "moment": "2.x.x",
+    "prop-types": "15.x.x",
     "react": "16.0.0-alpha.12",
-    "react-native": "^0.46.1",
+    "react-native": "0.48.x",
     "react-navigation": "^1.0.0-beta.11",
-    "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "react-redux": "5.x.x",
+    "redux": "3.x.x",
+    "redux-thunk": "2.x.x"
   }
 }

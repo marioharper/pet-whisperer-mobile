@@ -1,4 +1,4 @@
-const getPetActivities = animalId => Promise.resolve([
+export const getPetActivities = animalId => Promise.resolve([
   { type: 'medication',
     animal_id: animalId,
     created_at: 1491829804,
@@ -70,7 +70,7 @@ const getPetActivities = animalId => Promise.resolve([
   },
 ]);
 
-const createPetActivity = (animalId, { type, at, note }) => Promise.resolve({
+export const createPetActivity = (animalId, { type, at, note }) => Promise.resolve({
   type,
   animal_id: animalId,
   created_at: new Date().getTime(),
@@ -78,8 +78,3 @@ const createPetActivity = (animalId, { type, at, note }) => Promise.resolve({
   at,
   note,
 });
-
-export default {
-  getPetActivities,
-  createPetActivity,
-};

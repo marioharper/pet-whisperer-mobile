@@ -17,9 +17,9 @@ let pets = [{
   image_url: 'https://storage.googleapis.com/pet-whisperer.appspot.com/655881db-9f7c-48e5-a225-5613b770846c.jpeg',
 }];
 
-const getPets = () => Promise.resolve(pets);
+export const getPets = () => Promise.resolve(pets);
 
-const updatePet = (updatedPet) => {
+export const updatePet = (updatedPet) => {
   pets = pets.map((pet) => {
     if (pet.id === updatedPet.id) {
       return updatedPet;
@@ -29,9 +29,4 @@ const updatePet = (updatedPet) => {
   });
 
   return Promise.resolve(updatedPet);
-};
-
-export default {
-  getPets,
-  updatePet,
 };

@@ -3,9 +3,8 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
-import { getPets } from './actions/pets';
-import { login } from './actions/auth';
 import AppWithNavigationState from './navigators/AppNavigator';
+import { getLoginStatus } from './actions/auth';
 
 const store = createStore(
   reducer,
@@ -13,7 +12,7 @@ const store = createStore(
 );
 
 const App = () => {
-  store.dispatch(login());
+  store.dispatch(getLoginStatus());
 
   return (
     <Provider store={store} >

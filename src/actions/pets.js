@@ -1,4 +1,4 @@
-import petApi from '../api/pets';
+import * as petApi from '../api/pets';
 import * as actionTypes from '../constants/actions';
 
 export function getPets() {

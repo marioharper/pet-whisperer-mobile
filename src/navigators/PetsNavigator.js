@@ -1,14 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Button } from 'react-native';
-import { addNavigationHelpers, StackNavigator } from 'react-navigation';
-import { connect } from 'react-redux';
+import { StackNavigator } from 'react-navigation';
 import Pets from '../containers/pets';
 import Pet from '../containers/pet';
 import EditPet from '../containers/editPet';
 import CreatePetActivity from '../containers/createPetActivity';
 
-export const PetsNavigator = StackNavigator({
+export default StackNavigator({
   Pets: {
     screen: Pets,
     navigationOptions: {
@@ -65,18 +63,3 @@ export const PetsNavigator = StackNavigator({
     headerTintColor: '#4A5468',
   },
 });
-
-const PetsWithNavigationState = ({ dispatch, nav }) => (
-  <PetsNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
-);
-
-PetsWithNavigationState.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  nav: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = state => ({
-  nav: state.petsNav,
-});
-
-export default connect(mapStateToProps)(PetsWithNavigationState);

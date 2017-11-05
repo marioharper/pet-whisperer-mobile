@@ -3,6 +3,9 @@
     "sdkVersion": "21.0.0",
     "packagerOpts": {
       "assetExts": ["ttf"]
+    },
+    "splash": {
+      "image": "./resources/images/logo.png"
     }
   }
 }

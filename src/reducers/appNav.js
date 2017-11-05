@@ -1,3 +1,3 @@
-import { AppNavigator } from '../navigators/AppNavigator';
+import { RootNavigator } from '../navigators/Root';
 
-export default (state, action) => AppNavigator.router.getStateForAction(action, state) || state;
+export default (state, action) => RootNavigator.router.getStateForAction(action, state) || state;

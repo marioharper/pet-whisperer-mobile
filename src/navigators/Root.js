@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { addNavigationHelpers, StackNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
-import { MainNavigator } from './MainNavigator';
-import SplashScreen from '../containers/splashScreen';
+import LoggedIn from './LoggedIn';
 import AuthScreen from '../containers/auth';
 
-export const AppNavigator = StackNavigator({
-  SplashScreen: { screen: SplashScreen },
-  MainNavigator: { screen: MainNavigator },
+export const RootNavigator = StackNavigator({
+  LoggedIn: { screen: LoggedIn },
   AuthScreen: { screen: AuthScreen },
 }, {
   headerMode: 'screen',
@@ -18,7 +16,7 @@ export const AppNavigator = StackNavigator({
 });
 
 const AppWithNavigationState = ({ dispatch, nav }) => (
-  <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
+  <RootNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
 );
 
 AppWithNavigationState.propTypes = {

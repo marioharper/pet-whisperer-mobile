@@ -56,3 +56,26 @@ export function getLoginStatus() {
       }));
   };
 }
+
+
+export function getLoginStatusAndRedirect() {
+  return async (dispatch, getState) => {
+    await dispatch(getLoginStatus());
+
+    const { isLoggedIn } = getState().auth;
+
+    if (isLoggedIn) {
+      return dispatch(NavigationActions.reset({
+        index: 0,
+        actions: [NavigationActions.navigate({ routeName: 'LoggedIn' })],
+        key: null,
+      }));
+    }
+
+    return dispatch(NavigationActions.reset({
+      index: 0,
+      actions: [NavigationActions.navigate({ routeName: 'AuthScreen' })],
+      key: null,
+    }));
+  };
+}
